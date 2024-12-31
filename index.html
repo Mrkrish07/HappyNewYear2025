@@ -28,7 +28,7 @@
       transition: transform 0.5s ease, box-shadow 0.5s ease;
       overflow: visible;
       height: auto;
-      max-width: 90%;
+      width: 90%; /* Ensure container width is limited */
     }
 
     .container:hover {
@@ -37,17 +37,16 @@
     }
 
     h1 {
-      font-size: 4rem;
+      font-size: 5vw; /* Adjust font size based on viewport width */
       color: #ffffff;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
       position: relative;
       line-height: 1.2;
-      z-index: 10;
       margin: 0;
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: #ffffff;
       line-height: 1.5;
       margin-bottom: 20px;
@@ -143,11 +142,11 @@
     /* Mobile Responsiveness */
     @media (max-width: 768px) {
       h1 {
-        font-size: 2.5rem; /* Smaller font size for mobile */
+        font-size: 8vw; /* More responsive font size for mobile devices */
       }
 
       p {
-        font-size: 1rem; /* Adjust paragraph font size */
+        font-size: 0.9rem; /* Adjust paragraph font size */
         padding: 10px;
       }
 
@@ -169,7 +168,7 @@
     /* Very Small Screens */
     @media (max-width: 480px) {
       h1 {
-        font-size: 2rem; /* Even smaller font size on very small screens */
+        font-size: 12vw; /* Even smaller font size on tiny screens */
       }
 
       .btn {
